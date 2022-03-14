@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>   
+</head>
+ 
+<body>
+    <section>
+        <!--- navigation --->
+        <nav>
+            <!--- logo --->
+            <a href="#" class="logo">CodeMaster</a>
+            <!--- menu --->
+            <ul>
+                <li><a href="#" class="active" onclick="FuctionH()">Home</a></li>
+                <script>
+                    function FuctionH() {
+                    location.replace("MainWeb.html")
+                    }
+                    </script>
+                <li><a href="#">Services</a></li>
+                <li><a href="#" onclick="prod()">Products</a></li>
+                <script>
+                    function prod() {
+                    location.replace("Web_prod.html")
+                    }
+                    </script>
+                
+            </ul>
+        </nav>
+ 
+        <!--- text --->
+        <div class="text-container">
+            <p>Welcome to,</p>
+            <p>Web Trial</p>
+            <p>JavaScript</p>
+            <p id="text1">Make your programming much more easier</p>
+            <p id="demo"></p>
+
+                <script>
+                let day;
+                switch (new Date().getDay()) {
+                case 0:
+                    day = "Minggu";
+                    break;
+                case 1:
+                    day = "Senin";
+                    break;
+                case 2:
+                    day = "Selasa";
+                    break;
+                case 3:
+                    day = "Rabu";
+                    break;
+                case 4:
+                    day = "Kamis";
+                    break;
+                case 5:
+                    day = "Jumat";
+                    break;
+                case  6:
+                    day = "Sabtu";
+                }
+                document.getElementById("demo").innerHTML = "Hari ini adalah hari " + day;
+                </script>
+            <button class="hire-btn" onclick='document.getElementById("text1").innerHTML = "Hallo"'>Try me!</button>
+            <button class="down-cv" onclick="window.print()">Print This Page</button>
+        </div>
+        <!-- model -->
+        <img alt="model" class="model" src="img/ezgif-2-bcc7191b6d.jpg">  
+    </section>
+ 
+    <!-- services -->
+    <div class="services">
+        <!--text-->
+        <div class="services-text ">
+            <p>Services</p>
+            <p>CodeMaster provides help to programmers out there to create programs faster, more practical, efficient and easier.</p>
+        </div>
+         
+        <div class="box-container">
+        <!--- 1 --->
+            <div class="box-1">
+                <span>1</span>
+                <p class="heading">Easier</p>
+                <p class="details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <button onclick="Function1()">Read More</button>
+                <script>
+                    function Function1() {
+                    location.replace("Web_read.html")
+                    }
+                    </script>
+            </div>
+        <!--- 2 --->
+            <div class="box-2">
+                <span>2</span>
+                <p class="heading">Faster</p>
+                <p class="details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <button onclick="Functionr2()">Read More</button>
+                <script>
+                    function Functionr2() {
+                    location.replace("Web_read2.html")
+                    }
+                    </script>
+            </div>
+        <!--- 3 --->
+            <div class="box-3">
+                <span>3</span>
+                <p class="heading">Efficiently</p>
+                <p class="details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <button onclick="Functionr3()">Read More</button>
+                <script>
+                    function Functionr3() {
+                    location.replace("Web_read3.html")
+                    }
+                    </script>
+            </div>
+        </div>
+    </div>
+     
+    
+ 
+    <!-- footer -->
+    <footer>
+        <p>Footer</p>
+             
+        
+         
+        <!--copyright-->
+        <p class="copyright">Copyright by </p>
+    </footer>
+ 
+    
+</body>
+ 
+</html>
