@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="style2.css"/>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>   
+</head>
+ 
+<body>
+    <section>
+        <!--- navigation --->
+        <nav>
+            <!--- logo --->
+            <a href="#" class="logo"  onclick="myFunction()">CodeMaster</a>
+            <script>
+                function myFunction() {
+                location.replace("MainWeb.html")
+                }
+                </script>
+            <!--- menu --->
+            <ul>
+                <li><a href="#" class="active" onclick="FuctionH()">Home</a></li>
+                <script>
+                    function FuctionH() {
+                    location.replace("MainWeb.html")
+                    }
+                    </script>
+                <li><a href="#">Services</a></li>
+                <li><a href="#" onclick="prod()">Products</a></li>
+                <script>
+                    function prod() {
+                    location.replace("Web_prod.html")
+                    }
+                    </script>
+                
+            </ul>
+        </nav>
+        
+        <!--testimonials-->
+<div class="testimoni">
+    <!--text-->
+    <div class="testimoni-text ">
+        <p>Product Availability</p>
+    </div>        
+
+    <div class="testimoni-col">
+        <div class="testimoni-1">
+            <img src="img/logo.png">
+            <div>
+                <p>Inlcude all basic feature, life-time warranty.</p>
+                <h3>Basic Version</h3>
+                
+            </div>
+        </div>
+
+        <div class="testimoni-2">
+            <img src="img/logo.png">
+            <div>
+                <p>Include all basic feature, life-time warranty, proffesional guidance.</p>
+                <h3>Premium Version</h3>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+ 
+</html>
